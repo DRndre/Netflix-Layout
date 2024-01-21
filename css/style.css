@@ -1,0 +1,323 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: black;
+    font-family: Helvetica;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+a.nav-link, a.active {
+    color: white;
+    cursor: pointer;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: red;
+    font-weight: bold;
+}
+
+#netflix_logo {
+    height: 35px;
+}
+
+#avatar {
+    height: 30px;
+}
+
+#right_menu {
+    margin-right: 10px;
+    justify-content: right;
+    display: flex;
+    align-items: center;
+}
+
+#right_menu > * {
+    color: white;
+    cursor: pointer;
+}
+
+#right_menu > a {
+    text-decoration: none;
+}
+
+#hamburger img {
+    height: 30px;
+}
+
+#caret-down1 {
+    color: white;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.space {
+    margin-right: 20px;
+}
+
+#avatar {
+    margin-right: 10px;
+}
+
+/*GENERI*/
+
+#menu_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Helvetica;
+    margin-top: 25px;
+}
+
+#dropdown_menu, #grid_menu {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: Helvetica;
+}
+
+#dropdown_menu h5 {
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+
+.dropdown-toggle {
+    border: solid #8f9091 1px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    letter-spacing: 1px;
+    font-family: Helvetica;
+    font-size: 13px;
+}
+
+.dropdown-toggle:hover {
+    color: red;
+}
+
+.dropdown-menu {
+    background-color: black;
+    border: solid #8f9091 1px;
+    border-radius: 0px;
+}
+
+.dropdown-item {
+    color: white;
+    font-family: Helvetica;
+    font-size: 13px;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: red;
+}
+
+.borderz {
+    border: solid 1px #8f9091;
+    padding: 8px;
+    font-size: 13px;
+    width: 30px;
+    cursor: pointer;
+}
+
+/*WRAPPERS*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+a.carousel-control-prev {
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+
+a.carousel-control-next {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+
+#wrapper_title1, #wrapper_title2, #wrapper_title3 {
+    color: #c9c9c9;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: Helvetica;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.card {
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.2);
+}
+
+
+/*FOOTER*/
+
+footer {
+    width: 50%;
+    margin: auto;
+}
+
+#social {
+    margin-top: 100px;
+    margin-left: 31px;
+    font-size: 27px;
+}
+
+.fa-brands {
+    padding-right: 20px;
+}
+
+#info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.voices {
+    font-family: Helvetica;
+    color: #818181;
+}
+
+#info {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.list_voices {
+    list-style-type: none;
+}
+
+div.voices li {
+    padding-bottom: 10px;
+}
+
+#service_code {
+    border: solid 1px #8f9091;
+    font-size: 13px;
+    padding: 7px;
+    margin-left: 31px;
+}
+
+#copyright {
+    font-size: 10px;
+    margin-top: 20px;
+    margin-left: 31px;
+    margin-bottom: 50px;
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url(../assets/fonts/Helvetica-Font/Helvetica.ttf);
+}
+
+@media screen and (max-width: 576px) {
+    #right_menu {
+        margin-bottom: 10px;
+    }
+    
+    a.arrow__btn {
+      display: none;
+    }
+
+    #caret-down2 {
+        display: none;
+    }
+
+    #avatar {
+        display: none;
+    }
+
+    #bell {
+        margin-right: 0px;
+    }
+
+    footer {
+        width: 80%;
+        margin: auto;
+    }
+
+    #info {
+        justify-content:start;
+    }
+
+    .carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+
+    .carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.mx-auto {
+    margin-right: -15px!important;
+    margin-left: -15px!important;
+}
+
+.container.text-center.my-3 {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+
+
+
+
+
